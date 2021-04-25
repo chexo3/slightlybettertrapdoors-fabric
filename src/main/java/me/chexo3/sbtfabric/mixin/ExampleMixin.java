@@ -1,4 +1,4 @@
-package net.glasslauncher.example.mixin;
+package me.chexo3.sbtfabric.mixin;
 
 import net.minecraft.client.MinecraftApplet;
 import net.minecraft.client.gui.screen.menu.MainMenu;

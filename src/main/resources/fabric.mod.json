@@ -1,29 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "sbtfabric",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Slightly Better Trapdoors (Fabric)",
+  "description": "Improves trapdoors, axes, and signs somewhat.",
   "authors": [
-    "Me!"
+    "chexo3",
+    "Gun Man"
   ],
   "contact": {
-    "homepage": "https://glass-launcher.net/",
-    "sources": "https://github.com/calmilamsy/BIN-fabric-example-mod"
+    "homepage": "https://glass-repo.net/repo/mod/sbtfabric",
+    "sources": "https://github.com/chexo3/slightlybettertrapdoors-fabric"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/sbtfabric/icon.png",
 
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "net.glasslauncher.example.ExampleMod"
-    ]
-  },
   "mixins": [
-    "modid.mixins.json"
+    "sbtfabric.mixins.json"
   ],
 
   "depends": {
