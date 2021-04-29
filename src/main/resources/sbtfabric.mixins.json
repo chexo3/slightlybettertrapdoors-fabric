@@ -4,7 +4,7 @@
   "package": "me.chexo3.sbtfabric.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "ExampleMixin"
+    "HatchetMixin"
   ],
   "server": [
   ],
