@@ -4,8 +4,8 @@
   "package": "me.chexo3.sbtfabric.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "HatchetMixin.addTrapdoorToHatchetBlocks",
-    "TrapdoorMixin.makeTrapdoorPlaceable"
+    "hatchet.EffectiveBlocksMixin",
+    "trapdoor.CanPlaceAtMixin"
   ],
   "server": [
   ],

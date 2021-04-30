@@ -1,4 +1,4 @@
-package me.chexo3.sbtfabric.mixin.TrapdoorMixin;
+package me.chexo3.sbtfabric.mixin.trapdoor;
 
 import net.minecraft.block.BlockBase;
 import net.minecraft.block.Trapdoor;
@@ -10,13 +10,13 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Trapdoor.class)
-public class makeTrapdoorPlaceable extends BlockBase {
+public class CanPlaceAtMixin extends BlockBase {
     /*
     Dummy constructor to appease javac
     Apparently, convention is to throw an
     AssertionError if somehow instantiated.
     */
-    private makeTrapdoorPlaceable(int i, Material m) {
+    private CanPlaceAtMixin(int i, Material m) {
         super(i, m);
         throw new AssertionError("Don't touch my dummy constructors");
     }
