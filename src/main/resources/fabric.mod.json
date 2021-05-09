@@ -15,7 +15,7 @@
     "sources": "https://github.com/chexo3/slightlybettertrapdoors-fabric"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/sbtfabric/icon.png",
 
   "environment": "*",
