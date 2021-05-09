@@ -1,4 +1,4 @@
-package me.chexo3.sbtfabric.mixin.hatchet;
+package me.chexo3.sbtfabric.mixin;
 
 import net.minecraft.block.BlockBase;
 import net.minecraft.item.tool.Hatchet;
@@ -11,7 +11,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.Arrays;
 
 @Mixin(Hatchet.class)
-public class EffectiveBlocksMixin {
+public class HatchetMixin {
+
+	//Add Trapdoor to effectiveBlocks array for Hatchet
 	@Shadow
 	private static BlockBase[] effectiveBlocks;
 	@Inject(method = "<clinit>", at = @At("RETURN"))
