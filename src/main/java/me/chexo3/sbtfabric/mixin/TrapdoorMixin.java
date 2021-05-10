@@ -34,7 +34,7 @@ public class TrapdoorMixin extends BlockBase {
         return true;
     }
 
-    //Correct trapdoor direction/facing with borrowed dispenser code. Uses different values for meta, so be careful if you reuse it.
+    //Correct trapdoor direction/facing with borrowed dispenser/furnace code. Uses different values for meta, so be careful if you reuse it.
     @Override
     public void afterPlaced(Level level, int x, int y, int z, Living living) {
         int rotation = MathHelper.floor((double)(living.yaw * 4.0F / 360.0F) + 0.5D) & 3;
