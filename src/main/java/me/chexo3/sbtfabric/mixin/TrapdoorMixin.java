@@ -38,18 +38,7 @@ public class TrapdoorMixin extends BlockBase {
     @Override
     public void afterPlaced(Level level, int x, int y, int z, Living living) {
         int rotation = MathHelper.floor((double)(living.yaw * 4.0F / 360.0F) + 0.5D) & 3;
-        switch(rotation) {
-            case 0:
-                level.setTileMeta(x, y, z, 0);
-                break;
-            case 1:
-                level.setTileMeta(x, y, z, 3);
-                break;
-            case 2:
-                level.setTileMeta(x, y, z, 1);
-                break;
-            case 3:
-                level.setTileMeta(x, y, z, 2);
-        }
+        int[] magic = { 0, 3, 1, 2 };
+        level.setTileMeta(x, y, z, magic[rotation]);
     }
 }
