@@ -4,14 +4,12 @@ import net.minecraft.block.BlockBase;
 import net.minecraft.block.Trapdoor;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Living;
-import net.minecraft.entity.player.PlayerBase;
 import net.minecraft.level.Level;
 import net.minecraft.util.maths.MathHelper;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Trapdoor.class)
